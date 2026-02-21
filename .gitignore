@@ -35,3 +35,24 @@ out/
 
 ### VS Code ###
 .vscode/
+
+##commands push
+ git add .
+  208  git commit -m "added first created project"
+  209  git remote add  origin https://github.com/letam98/hackathon-blackrock.git
+  210  git remote -v
+  211  git branch -M main
+  212  git push -u origin main
+  213  git push -u origin main --force
+  214  git config --global user
+  215  git config --global user.name
+  216  git config --global user.email
+  217  git config --global user.email "ketankanoje11@gmail.com"
+  218  git config --global user.email
+  219  git push -u origin main --force
+  220  git config --global user.name "letam98"
+  221  git push -u origin main --force
+  222  git config --global user.name
+  223  git push -u origin main --force
+  224  git push -u origin main --force
+  225  git push -u origin main --force

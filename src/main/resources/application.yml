@@ -1,0 +1,43 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 20000       # ms
+      idle-timeout: 30000             # ms
+      max-lifetime: 1800000           # ms (30 minutes)
+      minimum-idle: 10
+      maximum-pool-size: 10           # add if you want to cap pool size
+      pool-name: HikariPool-1
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true                    # optional, helps debugging
+    properties:
+      hibernate:
+        format_sql: true              # optional
+    hibernate:
+      ddl-auto: update                # options: none | validate | update | create | create-drop
+
+  # Optional: run schema/data SQL if you rely on SQL files instead of JPA
+  sql:
+    init:
+      mode: never                     # use 'always' if you want schema.sql/data.sql to run
+
+
+  batch:
+    jdbc:
+      initialize-schema: always   # auto-create Spring Batch metadata tables
+    sql:
+      init:
+        mode: alway
+
+
+  cors:
+    allowed-origins:
+      - http://localhost:3000

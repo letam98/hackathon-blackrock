@@ -1,5 +1,6 @@
 
-Retirement Savings & Micro‑Investment API
+Retirement Savings & Micro‑Investment API-
+
 A production-grade Spring Boot (Java 21) micro‑investment engine that transforms daily expenses into long-term retirement savings.\ This system processes transactions, applies temporal rules (Q, P & K), performs compound interest projections, inflation adjustment, and calculates tax benefits based on Indian tax slabs.
 
 

@@ -199,7 +199,3 @@ Invalid Date Format	Not yyyy-MM-dd HH:mm:ss
 
 
 
-
-If you'd like, I can also generate:\ ✅ UML diagram\ ✅ Sequence diagrams\ ✅ Sample test cases\ ✅ Postman collection JSON
-Just tell me!
-
